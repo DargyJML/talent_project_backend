@@ -3,8 +3,8 @@ import { getAllBlogs, getBlog, createBlog, updateBlog, deleteBlog } from '../con
 
 const router = express.Router()
 
-//ruta para probar que el despliegie es correcto 
-application.get('/ping', (req, res)=> res.send('pong'));
+//ruta para probar que el despliegie es correcto  
+application.get('/ping', ( res)=> res.send('pong'));
 
 // ruta para mostrar tosdos los registros
 router.get('/', getAllBlogs)
