@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize";
 
-const db = new Sequelize('database_Talent_project', 'root','',{
-    host:'localhost',
+const db = new Sequelize('railway', 'root','4Vdn2fSIE3wqEmvSTXWG',{
+    localhost:'containers-us-west-98.railway.app',
     dialect: 'mysql'
 })
 
