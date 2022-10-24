@@ -1,7 +1,10 @@
-import express from 'express'
+import express, { application } from 'express'
 import { getAllBlogs, getBlog, createBlog, updateBlog, deleteBlog } from '../controllers/BlogController.js'
 
 const router = express.Router()
+
+//ruta para probar que el despliegie es correcto 
+application.get('/ping', (req, res)=> res.send('pong'));
 
 // ruta para mostrar tosdos los registros
 router.get('/', getAllBlogs)
