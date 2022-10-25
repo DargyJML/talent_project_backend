@@ -1,9 +1,9 @@
 import { Sequelize } from "sequelize";
 
-const db = new Sequelize('railway', 'root','4Vdn2fSIE3wqEmvSTXWG',{
-    host:'containers-us-west-98.railway.app',
+const db = new Sequelize('database_Talent_project', 'root','',{
+    host:'localhost',
     dialect: 'mysql',
-    port: '7310'
+   /*  port: '7310' */
 
 })
 
